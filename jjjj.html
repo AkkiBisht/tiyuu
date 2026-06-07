@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akhilesh ❤️ Tiya - Deluxe Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>html{scroll-behavior:smooth;overflow-y:auto;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:linear-gradient(135deg,#fff5f8,#ffdbe9,#ffeaf3);overflow-x:hidden;overflow-y:auto}
+.page{display:none;min-height:100vh;padding:40px 20px;justify-content:flex-start;align-items:center;flex-direction:column;text-align:center;overflow-y:auto}
+.active{display:flex}
+.card{background:rgba(255,255,255,.35);backdrop-filter:blur(12px);padding:25px;border-radius:30px;max-width:900px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.title{font-family:'Great Vibes',cursive;font-size:4rem;color:#ff4f8b}
+h2{color:#ff4f8b;margin-bottom:10px}
+.btn{background:#ff4f8b;color:#fff;border:none;padding:14px 28px;border-radius:40px;cursor:pointer;margin-top:20px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;width:100%}
+.gallery img{width:100%;height:250px;object-fit:cover;border-radius:20px;cursor:pointer}
+.memory-card{background:#fff;padding:10px;border-radius:20px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+.memory-card p{margin-top:8px;color:#ff4f8b}
+.divider{margin:20px 0;color:#ff4f8b}
+.timeline-step{background:#fff;margin:10px;padding:15px;border-radius:16px}
+.arrow{font-size:30px;animation:bounce 1s infinite}
+@keyframes bounce{50%{transform:translateY(10px)}}
+.heart,.rose{position:fixed;pointer-events:none;animation:float 10s linear infinite}
+@keyframes float{from{transform:translateY(100vh)}to{transform:translateY(-120px)}}
+.bigheart{font-size:120px;animation:beat 1s infinite}
+@keyframes beat{50%{transform:scale(1.2)}}
+#lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);justify-content:center;align-items:center}
+#lightbox img{max-width:90%;max-height:90%}
+.type{border-right:3px solid #ff4f8b;overflow:hidden;white-space:pre-wrap}
+canvas{position:fixed;inset:0;pointer-events:none}
+#proposalBox{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+
+<section id="welcome" class="page active"><div class="card">
+<h1 class="title">Akhilesh ❤️ Tiya</h1>
+<p>A Birthday Surprise For My Guu ❤️</p><br>
+<p>Together Since 01 March 2024 ♾️</p>
+<button class="btn" onclick="go('letter')">💌 Open My Love Letter</button>
+</div></section>
+
+<section id="letter" class="page"><div class="card">
+<h2>Happy Birthday My Guu ❤️</h2>
+<p class="type">Wishing you happy birthday my beby 🥺🫂💌
+
+Mata Rani always bless and love yuh bacha 🪷🌞
+
+Thank you soo much hamesha mere saath rehne ke liye .
+Tu hamesha khush reh bacha 🫂❤️
+
+01 March 2024 woh din tha jisne meri zindagi badal di.
+Tum meri smile, mera sukoon aur meri favourite person ho 🥺🫂💌.
+
+our jurney kabhi rolar coaster jaisa raha hai, lekin har moment mere liye priceless hai🫂❤️.
+
+har baat pe ladai karna choti si baat pr bhi 🫂💌
+pr uske baad ka pary hamare rishte ko aur bhi strong banata hai❤️🪷🌞
+
+it not abought the good times we had but its about how we stood together in the bad times 🫂💌
+
+the time we spent together is the best time of my life not only ny but also yours 🥺🫂💌
+
+han kabhi kabhi me galtiiya bhut jyda kartha hu but mera payr usi se or jyda badta hai tere liye 🫂❤️
+
+I Love You To The Moon And Back ❤️♾️🧿
+
+— motuuuu </p>
+<button class="btn" onclick="go('gallery')">📸 See Our Memories</button>
+</div></section>
+
+<section id="gallery" class="page"><div class="card" style="width:100%">
+<h2>Our Memories 📸</h2>
+<div class="divider">❤️ ───── 🌹 ───── ❤️</div>
+<div class="gallery">
+<div class="memory-card"><img src="IMG1.jpg"><p>💖 The day we talked for hours and forgot about time.</p></div>
+<div class="memory-card"><img src="IMG2.jpg"><p>🌸 Every smile of yours makes my world brighter.</p></div>
+<div class="memory-card"><img src="IMG3.jpg"><p>🥺 One of my favourite memories with you.</p></div>
+<div class="memory-card"><img src="IMG4.jpg"><p>✨ Every moment together feels magical.</p></div>
+<div class="memory-card"><img src="IMG5.jpg"><p>❤️ Because you're in it, this photo is special.</p></div>
+</div>
+<button class="btn" onclick="go('journey')">🕰 Our Journey</button>
+</div></section>
+
+<section id="journey" class="page"><div class="card">
+<h2>Our Journey 🌹</h2>
+<div class="timeline-step">❤️ 01 March 2024 - Our Story Started</div>
+<div class="arrow">⬇️</div>
+<div class="timeline-step">📱 Endless Calls & Cute Talks</div>
+<div class="arrow">⬇️</div>
+<div class="timeline-step">🥺 Countless Sweet Memories</div>
+<div class="arrow">⬇️</div> 
+<div class="timeline-step">💞 Our First kiss coching me</div>
+<div class="arrow">⬇️</div>
+<div class="timeline-step">🌸 jab tujhe godi me uthaya heheh</div>
+<div class="arrow">⬇️</div>
+<div class="timeline-step">🏔 Joshimath Trip</div>
+<div class="arrow">⬇️</div>
+<div class="timeline-step">🎂 Birthday Celebration</div>
+<div class="arrow">⬇️</div>
+<div class="timeline-step">♾️ Forever Together</div>
+<button class="btn" onclick="go('thoughts')">💌 Continue</button>
+</div></section>
+
+<section id="thoughts" class="page"><div class="card">
+<h2>💌 Little Things I Love About You</h2>
+<p>❤️ Your beautiful smile<br><br>🌸 Your caring nature<br><br>✨ The way you make everything special<br><br>🥺 The comfort I feel while talking to you<br><br>💖 Your cute little habits<br><br>♾️ Simply being YOU</p>
+<button class="btn" onclick="go('surprise')">🎁 Final Surprise</button>
+</div></section>
+
+<section id="surprise" class="page"><div class="card">
+<div class="bigheart">❤️</div>
+<h2>I Love You Guu ❤️</h2>
+<p>No matter where life takes us, you'll always be my favourite person.</p>
+<h2 style="margin-top:20px">Will You Always Stay With Me? 🥺❤️</h2>
+<div id="proposalBox">
+<button id="yesBtn" class="btn">YES ❤️</button>
+<button id="noBtn" class="btn">NO 😭</button>
+</div>
+<p style="margin-top:20px;color:#ff4f8b">No matter how many birthdays come and go, you will always be my favourite notification, my favourite smile, and my favourite person. ❤️♾️</p>
+</div></section>
+
+<div id="lightbox"><img id="lbimg"></div>
+
+<script>
+function go(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');}
+
+for(let i=0;i<40;i++){let e=document.createElement('div');e.className=Math.random()>.5?'heart':'rose';e.innerHTML=e.className=='heart'?'❤️':'🌹';e.style.left=Math.random()*100+'%';e.style.fontSize=(20+Math.random()*20)+'px';e.style.animationDuration=(5+Math.random()*8)+'s';document.body.appendChild(e);}
+
+document.querySelectorAll('.gallery img').forEach(img=>{img.onclick=()=>{lightbox.style.display='flex';lbimg.src=img.src;}});
+lightbox.onclick=()=>lightbox.style.display='none';
+
+const c=document.getElementById('fx');const ctx=c.getContext('2d');
+function resize(){c.width=innerWidth;c.height=innerHeight}resize();onresize=resize;
+let parts=[];
+function fireworks(){for(let i=0;i<150;i++){parts.push({x:c.width/2,y:c.height/2,vx:(Math.random()-.5)*8,vy:(Math.random()-.5)*8,l:100});}}
+setInterval(()=>{ctx.clearRect(0,0,c.width,c.height);parts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.l--;ctx.fillText("✨",p.x,p.y);});parts=parts.filter(p=>p.l>0);},30);
+
+let yesScale=1;
+setInterval(()=>{
+const yesBtn=document.getElementById("yesBtn");
+const noBtn=document.getElementById("noBtn");
+if(yesBtn && noBtn && !noBtn.dataset.ready){
+noBtn.dataset.ready="1";
+noBtn.addEventListener("mouseover",()=>{
+noBtn.style.position="fixed";
+noBtn.style.left=Math.random()*(window.innerWidth-150)+"px";
+noBtn.style.top=Math.random()*(window.innerHeight-80)+"px";
+yesScale+=0.15;
+yesBtn.style.transform=`scale(${yesScale})`;
+});
+yesBtn.addEventListener("click",()=>{alert("Yayyyyy we are geting merred ❤️♾️");fireworks();});
+}
+},500);
+</script>
+</body>
+</html>
